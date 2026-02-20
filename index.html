@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <button id="theme-toggle" class="pixel-button">
+                    Alternar Tema
+                </button>
+            </div>
+            <div>
+                <ul class="acesso-rapido">
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="sobre">
+        <div class="sobre-mim">
+            <img src="/imgs/rian.jpeg" alt="" class="rian">
+            <ul class="redes-sociais">
+                <li><img src="/imgs/icons8-github 1.svg" alt=""></li>
+                <li><img src="/imgs/icons8-linkedin 1.svg" alt=""></li>
+            </ul>
+        </div>
+        <div>
+            <p class="texto">Olá me chamo Rian!, transformo café e lógica em soluções digitais escaláveis. Sou um desenvolvedor apaixonado por explorar as fronteiras da programação, transitando por diversas linguagens para encontrar a ferramenta certa para cada desafio.</p>
+        </div>
+    </section>
+    <h2>Minhas Linguagens</h2>
+    <section class="linguagens">
+        <div class="conhecimentos">
+            <div class="caixa">
+                <p>Front End</p>
+                <ul class="quadrado">
+                    <li><img src="/imgs/icons8-javascript 1.svg" alt=""></li>
+                    <li><img src="/imgs/Vector.svg" alt=""></li>
+                    <li><img src="/imgs/icons8-css 1.svg" alt=""></li>
+                    <li><img src="/imgs/icons8-texto-datilografado 1.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="caixa">
+                <p>Back-End</p>
+                <ul class="quadrado">
+                    <li><img src="/imgs/icons8-logo-java-coffee-cup 1.svg" alt=""></li>
+                    <li><img src="/imgs/icons8-python 1.svg" alt=""></li>
+                    <li><img src="/imgs/icons8-nodejs-96 1.svg" alt="" class="node"></li>
+                </ul>
+            </div>
+            <div class="caixa">
+                <p>Game Development</p>
+                <ul class="quadrado">
+                    <li><img src="imgs/image 1.svg" alt=""></li>
+                    <li><img src="imgs/icons8-arranhar 1.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Projetos em Andamento</h2>
+        <div class="projetos">
+            <div>
+                <img src="/imgs/WhatsApp Image 2026-02-19 at 16.39.10.jpeg" alt="">
+                <p>Fractura</p>
+            </div>
+            <div>
+                <img src="/imgs/png (1).png" alt="">
+                <p>GestFlux</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+}
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});</script>
+
+</html>

@@ -1,0 +1,154 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    max-width: 1200px; 
+    width: 90% ;       
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;       
+    margin: 0;       
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociais{
+    display: flex;
+    margin-left: 40px;
+    gap: 15px;
+    transition: filter 0.3s ease;
+}
+
+.rian {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 100px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-mim {
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.texto {
+    margin-top: 80px;
+    font-size: 25px
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    gap: 50px;
+    margin: 20px;
+    border-bottom: 2px solid #000;
+    border-color: black;
+}
+
+.acesso-rapido {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    gap: 30px;
+    font-size: 25px;
+    margin-bottom: 5px
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    border-color: black;
+}
+
+.linguagens {
+    display: flex;
+    justify-content: center;
+}
+.linguagens p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conhecimentos {
+    display: flex;
+}
+
+.quadrado {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    transition: filter 0.3s ease;
+}
+
+.node {
+    justify-content: center;
+}
+
+.caixa {
+    text-align: center;
+    margin-inline: 60px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projetos img {
+    width: 300px; 
+    height: auto;
+}
+
+/* Dark Mode */
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+body.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s; 
+}
+
+body.dark-mode .quadrado  {
+    filter: invert(1);
+    filter: invert(1) grayscale(1);
+}
+
+body.dark-mode .redes-sociais  {
+    filter: invert(1);
+    filter: invert(1) grayscale(1);
+}
+
+body.dark-mode nav {
+    border-color: #ffffff;
+}
+
+body.dark-mode h2 {
+    border-color: #ffffff;
+}
+
+body.dark-mode .acesso-rapido li a {
+    color: white;
+}
