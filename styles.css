@@ -112,6 +112,22 @@ h2 {
     width: 300px; 
     height: auto;
 }
+.spring {
+    width: 100px;
+    height: auto;
+    justify-content: center;
+}
+
+.projeto-caixa {
+  width: 300px;
+  height: 200px;
+  background-color: #3498db;
+  transition: opacity 0.3s ease;
+}
+
+.projeto-caixa:hover {
+  opacity: 0.5; /* deixa a div mais transparente */
+}
 
 /* Dark Mode */
 
@@ -152,3 +168,22 @@ body.dark-mode h2 {
 body.dark-mode .acesso-rapido li a {
     color: white;
 }
+
+.pixel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pixel-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
