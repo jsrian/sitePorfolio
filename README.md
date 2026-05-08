@@ -1,1 +1,1 @@
-Meu Portfolio usando javaScript, Css e HTML
+Meu Portfolio usando JavaScript, CSS3 e HTML5
